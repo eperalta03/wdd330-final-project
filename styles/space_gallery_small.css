@@ -133,26 +133,21 @@ main{
 }
 h1{
     text-align: center;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
 }
 
-.center-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .centered{
     display: flex;
+    padding: 10px;
+    font-size: 1.3rem;
     align-items: center;
     justify-content: center;
-    width: 90%;
-    padding: 1rem 2rem;
-    font-size: 1.8rem;
 }
 
 #search-input{
-    flex: 1;
+    
     border: #1d4358 2px solid;
     border-right: none;
     border-radius: 6px 0 0 6px;

@@ -42,5 +42,8 @@
         text-align: left;
     }
     
-   
+    .centered{
+        width: 50%;
+        font-size: 1.3rem;
+    }
 }
