@@ -4,6 +4,10 @@ export async function loadAPOD(){
     const data= await getAPOD();
     if (!data) return;
 
-    document.getElementById("apod-img").innerHTML= `
-        <img src= "${data.url}" alt= "${data.title}" loading= "lazy" width="200" height="280">`;
+    const div = document.getElementById("apod-container");
+    const apod = document.createElement("img");
+    apod.classList.add("apod");
+    apod.setAttribute("src", data.url);
+    apod.setAttribute("alt", data.title);
+    div.appendChild(apod);
 }

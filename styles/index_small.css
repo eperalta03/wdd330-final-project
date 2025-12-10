@@ -129,6 +129,16 @@ li:hover{
 h1{
     margin-left: 30px;
 }
+
+#apod-container{
+    text-align: center;
+}
+
+.apod{
+    width: 90%;
+    height: 500px;
+    border-radius: 5px;
+}
 /*------ FOOTER ------*/
 footer{
     background-image: linear-gradient(#1d4358, #0b0f1f);
