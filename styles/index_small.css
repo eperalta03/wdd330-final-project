@@ -21,6 +21,7 @@ header{
     color: white;
     margin: 0;
     border-bottom: #0b0f1f 1px solid;
+    margin-bottom: 0;
 }
 
 header img{
@@ -126,8 +127,14 @@ li:hover{
 }
 
 /*------ MAIN -------*/
+main{
+    margin-top: 0;
+    
+}
 h1{
-    margin-left: 30px;
+    margin-top: 0;
+    text-align: center;
+    padding-top: 20px;
 }
 
 #apod-container{
@@ -138,6 +145,10 @@ h1{
     width: 90%;
     height: 500px;
     border-radius: 5px;
+}
+
+.info{
+    margin: 20px;
 }
 /*------ FOOTER ------*/
 footer{
