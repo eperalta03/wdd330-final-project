@@ -1,0 +1,40 @@
+@media only screen and (min-width: 769px){
+
+    header{
+        grid-template-columns: 24px auto auto;
+    }
+    .hamburger{
+        display: none;
+    }
+
+    header img{
+        margin: 0;
+    }
+
+    header span{
+        margin: 0;
+        margin-left: 25px;
+    }
+
+    nav{
+        display: block;
+        margin-left: 25rem;
+        margin-bottom: 2px;
+    }
+
+    nav ul{
+        display: flex;
+        margin: 0;
+    }
+
+    nav a{
+        margin: 0 15px;
+    }
+
+    .current{
+        border-left: none;
+        border-bottom: 3px solid white;
+
+    }
+    
+}

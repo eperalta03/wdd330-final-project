@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+
+span, h1, h2 {
+    font-family: "Montserrat";
+}
+
+strong, p, a{
+    font-family: "Nunito";
+}
+
+/*------ HEADER ------*/
+header{
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    column-gap: 8px;
+    padding: 2rem;
+    align-items: end;
+    background-image: linear-gradient(#0b0f1f, #1d4358);
+    color: white;
+    margin: 0;
+    border-bottom: #0b0f1f 1px solid;
+}
+
+header img{
+    display: block;
+    width: 150%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+header span{
+    font-size: 1.5rem;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+/*------ HAMBURGER -------*/
+.hamburger{
+    display: block;
+    cursor: pointer;
+    font-family: "Nunito";
+    background-color: rgba(11, 15, 31, 0);
+    border: none;
+    color: white;
+    position: relative;
+    z-index: 2000;
+    margin: 0;
+    transition: transform 0.3s ease;
+} 
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+.hamburger:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color:#0b0f1f;
+    border-radius: 5px;
+}
+
+.hamburger.show:hover{
+    color: #ba393a;
+}
+/*------ NAV ------*/
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 45px; 
+}
+
+@media only screen and (max-width: 768px){
+    nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100vh;
+        background-image: linear-gradient(#0b0f1f, #486d87);
+        padding: 40px 20px;
+        transform: translateX(100%);
+        transition: opacity .35s ease, transform .5s cubic-bezier(0.22, 1, 0.36, 1);
+        z-index: 1000;
+    }
+
+    nav.show {
+        opacity: 1;
+        transform: translateX(0); 
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,0.3); 
+    }
+    
+}
+
+nav a{
+    display: block; 
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    margin: 15px;
+}
+
+.current{
+    border-left: 3px solid white; 
+}
+
+li{
+    border-radius: 3px;
+}
+
+
+
+li:hover{
+    background-color: white;
+    a{
+        color: #0b0f1f;
+    }
+}
+
+/*------ MAIN -------*/
+h1{
+    margin-left: 30px;
+}
+/*------ FOOTER ------*/
+footer{
+    background-image: linear-gradient(#1d4358, #0b0f1f);
+    color: white;
+    text-align: center;
+    padding: 1.2rem;
+}
+
+.media img{
+    width: 44px;
+    height: 44px;
+    margin: 5px;
+    transition: transform 0.3s ease;
+}
+
+.media img:hover{
+    transform: scale(1.2);
+}
+
+
+
