@@ -42,18 +42,5 @@
         text-align: left;
     }
     
-    #apod-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .apod{
-        width: 90%;
-        height: 500px;
-        margin: 0 0 30px 30px;
-    }
-
-    .info{
-        text-align: left;
-        margin: 10px;
-    }
+   
 }

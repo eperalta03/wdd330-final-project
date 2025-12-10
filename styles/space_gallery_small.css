@@ -136,52 +136,39 @@ h1{
     padding: 20px;
 }
 
-#apod-container{
-    text-align: center;
+.centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
 }
 
-.apod{
-    width: 90%;
-    height: 450px;
-    border-radius: 5px;
-    opacity: 0;
-    filter: blur(12px);
+#search-input{
+    flex: 1;
+    border: #1d4358 2px solid;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    font-family: "Nunito";
+    background-color: #cbd5e1;
+    
 }
 
-.apod:not([src=""]) {
-    animation: fadeIn 1s ease forwards;
+#search-btn{
+    border: #1d4358 2px solid;
+    border-left: none;
+    border-radius: 0 6px 6px 0;
+    background-color: rgba(72, 109, 135, .7);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        filter: blur(12px);
-    }
-    100% {
-        opacity: 1;
-        filter: blur(0);
-    }
+#search-btn:hover{
+    background-color: #eee;
 }
 
-.info{
-    margin: 20px;
-    font-size: 1.1rem;
-    padding: 5px;
-    opacity: 0;
-    transform: translateY(15px);
-    animation: fadeInText 1s ease forwards;
-}
-
-@keyframes fadeInText {
-  0% {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 /*------ FOOTER ------*/
 footer{
     background-image: linear-gradient(#1d4358, #0b0f1f);

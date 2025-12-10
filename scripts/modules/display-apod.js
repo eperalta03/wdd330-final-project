@@ -1,5 +1,6 @@
 import { getAPOD } from "./api-apod.js";
 
+
 export async function loadAPOD(){
     const data= await getAPOD();
     if (!data) return;
