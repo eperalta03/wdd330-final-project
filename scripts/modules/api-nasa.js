@@ -9,7 +9,8 @@ export async function searchImages(searchTerm) {
             throw new Error(`HTTP Error: ${response.status}`);
         }
 
-        const data = await response.json(); 
+        const data = await response.json();
+        console.log(data) 
         return data;
 
     } catch (error) { 

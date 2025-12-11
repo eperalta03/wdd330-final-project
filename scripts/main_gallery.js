@@ -8,16 +8,10 @@ setupNavigation();
 setupFooter();
 
 async function main() {
-    input.disabled = true;
-    searchBtn.disabled = true;
-
-    const results = await searchImages("mars");
+    const search = "galaxy";
+    const results = await searchImages(search);
     renderCards(results);
-
-    input.disabled = false;
-    searchBtn.disabled = false;
 }
-
 
 main();
 
@@ -30,6 +24,7 @@ input.addEventListener("keypress", e => {
         getResults();
     }
 });
+
 
 
 
