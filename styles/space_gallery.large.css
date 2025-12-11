@@ -43,7 +43,9 @@
     }
     
     .centered{
-        width: 50%;
+        justify-content: left;
+        margin-left: 24px;
         font-size: 1.3rem;
+        
     }
 }
