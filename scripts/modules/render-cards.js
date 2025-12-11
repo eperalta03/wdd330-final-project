@@ -42,7 +42,6 @@ export function diplayImgInfo(img){
                 <p>${img.data[0].description}</p>
                 <p><strong>Date Created: </strong>${img.data[0].date_created}</p>
                 <p><strong>Center: </strong>${img.data[0].center}</p>
-                <button class="fav-Btn">Add to Favorites</button>
             </div>
         </div>`
     imgInfo.showModal();

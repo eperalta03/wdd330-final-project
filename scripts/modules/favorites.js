@@ -1,4 +1,6 @@
 export function toggleFavorite(id) {
+    if (!id) return;
+    
     let favs = JSON.parse(localStorage.getItem("favs")) || [];
 
     if (favs.includes(id)) {

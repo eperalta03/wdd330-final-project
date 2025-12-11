@@ -8,21 +8,28 @@ setupNavigation();
 setupFooter();
 
 async function main() {
-    const search = "galaxy";
-    const results = await searchImages(search);
+    const input = document.getElementById("search-input");  
+    
+    let last = localStorage.getItem("lastSearch");
+
+    if (!last) {
+        last = "galaxy";  
+    }
+
+    input.value = last;  
+
+    const results = await searchImages(last);
     renderCards(results);
 }
 
-main();
+document.addEventListener("DOMContentLoaded", main);
 
-const searchBtn = document.getElementById("search-btn")
-const input = document.getElementById("search-input")
+const searchBtn = document.getElementById("search-btn");
+const inputEl = document.getElementById("search-input");
 
 searchBtn.addEventListener("click", getResults);
-input.addEventListener("keypress", e => {
-    if (e.key === "Enter"){
-        getResults();
-    }
+inputEl.addEventListener("keypress", e => {
+    if (e.key === "Enter") getResults();
 });
 
 

@@ -136,6 +136,36 @@ h1{
     padding: 20px;
 }
 
+.message-box {
+    background-color: #486d87;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    padding: .6rem;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 1%;
+    top: 10%;
+    background-color: #486d87;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    font-family: "Nunito";
+}
+
+.close-btn:hover {
+    background-color: white;
+    color: #ba393a;
+    transform: scale(1.2);
+}
 #apod-container{
     text-align: center;
 }
