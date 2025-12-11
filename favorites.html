@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NASA Space Explorer Space Gallery Page - Final Project WDD330"/>
+    <meta name="description" content="NASA Space Explorer Favorites Page - Final Project WDD330"/>
     <meta name="author" content="Eduardo Peralta"/>
-    <title>NASA Space Explorer - Space Gallery</title>
+    <title>NASA Space Explorer - Favorites</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/rocket-planet.png">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/gallery_small.css">
-    <link rel="stylesheet" href="styles/galley_large.css">
-    <script type="module" src="scripts/main_gallery.js"></script>
+    <link rel="stylesheet" href="styles/fav_small.css">
+    <link rel="stylesheet" href="styles/fav.large.css">
+    <script type="module" src="scripts/main_favorite.js"></script>
 </head>
 <body>
     <header>
@@ -23,18 +23,14 @@
         <nav id="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li class="current"><a href="gallery.html">Space Gallery</a></li>
-                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="gallery.html">Space Gallery</a></li>
+                <li class="current"><a href="favorites.html">Favorites</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Space Gallery</h1>
-        <section id="search-box" class="centered">
-            <input id="search-input" type="search" placeholder="Searh for ... (e.g. Mars)">
-            <button id="search-btn"> 🔍︎</button>
-        </section>
-        <section id="results-section"></section>
+        <h1>Favorites</h1>
+        <div id="favorites-container"></div>
         <dialog id="img-info"></dialog>
     </main>
     <footer>
