@@ -7,7 +7,7 @@ export function getLastVisit() {
     const lastVisit = localStorage.getItem('lastVisit');
 
     if (!lastVisit) {
-        messageEl.textContent = "Welcome to the Space Explorer Page!";
+        messageEl.textContent = "Welcome to the Space Explorer!";
     } else {
         const lastVisitDate = new Date(lastVisit);
         const diffMs = now - lastVisitDate; 
