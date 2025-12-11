@@ -45,7 +45,17 @@
     .centered{
         justify-content: left;
         margin-left: 24px;
-        font-size: 1.3rem;
-        
+        font-size: 1.3rem;  
+    }
+
+    .dialog-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 5px;
+    }
+
+    dialog img{
+        width: 100%;
+        height: 420px;
     }
 }
