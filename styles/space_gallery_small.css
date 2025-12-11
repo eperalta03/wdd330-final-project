@@ -159,15 +159,18 @@ h1{
     border: #1d4358 2px solid;
     border-left: none;
     border-radius: 0 6px 6px 0;
-    background-color: rgba(72, 109, 135, .7);
+    background-color: rgba(72, 109, 135);
     color: white;
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
 
 #search-btn:hover{
-    background-color: #eee;
+    background-color: white;
+    color: #1d4358;
 }
+
+
 
 /*------ CARDS ------*/
 
@@ -215,6 +218,17 @@ h1{
 .buttons button{
     cursor: pointer;
     font-family: "Nunito";
+    font-size: 1rem;
+    background-color: #1d4358;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: .4rem;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: #1d4358;
 }
 
 
